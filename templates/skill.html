@@ -5,7 +5,7 @@
     <title>skill</title>
 </head>
 <body>
-    <h1>Найдено со скиллом {{skill}}: {{count}}</h1>
+    <h1>Найдено со скиллом {{skill}}: {{skills | count}}</h1>
     {% for k, v in skills.items() %}
     <p><a href="/candidate/{{v}}">{{k}}</a></p>
     {% endfor %}

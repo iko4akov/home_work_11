@@ -5,7 +5,7 @@
     <title>search</title>
 </head>
 <body>
-    <h1>Всего найдено: {{count}}</h1>
+    <h1>Всего найдено: {{name | count}}</h1>
     {% for k,v in name.items() %}
     <p><a href="/candidate/{{v}}">{{k}}</a></p>
     {% endfor %}
